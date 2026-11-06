@@ -1,0 +1,87 @@
+{
+  "image": "/generated-assets/powerup_atlas_b-transparent.webp",
+  "grid": {
+    "cols": 2,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "healing_elixir",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 107,
+        "y": 28,
+        "w": 212,
+        "h": 358
+      },
+      "anchor": {
+        "x": 213,
+        "y": 385
+      }
+    },
+    {
+      "name": "celestial_aegis",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 429,
+        "y": 52,
+        "w": 305,
+        "h": 322
+      },
+      "anchor": {
+        "x": 582,
+        "y": 373
+      }
+    },
+    {
+      "name": "spirit_lantern",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 119,
+        "y": 410,
+        "w": 183,
+        "h": 377
+      },
+      "anchor": {
+        "x": 211,
+        "y": 786
+      }
+    },
+    {
+      "name": "clone_charm",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 400,
+        "y": 407,
+        "w": 354,
+        "h": 379
+      },
+      "anchor": {
+        "x": 577,
+        "y": 785
+      }
+    }
+  ]
+}

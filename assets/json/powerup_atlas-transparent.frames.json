@@ -1,0 +1,163 @@
+{
+  "image": "/generated-assets/powerup_atlas-transparent.webp",
+  "grid": {
+    "cols": 4,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "bamboo_shield",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 74,
+        "y": 69,
+        "w": 288,
+        "h": 328
+      },
+      "anchor": {
+        "x": 218,
+        "y": 396
+      }
+    },
+    {
+      "name": "shadow_cloak",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 439,
+        "y": 69,
+        "w": 313,
+        "h": 317
+      },
+      "anchor": {
+        "x": 596,
+        "y": 385
+      }
+    },
+    {
+      "name": "time_hourglass",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 858,
+        "y": 42,
+        "w": 216,
+        "h": 373
+      },
+      "anchor": {
+        "x": 966,
+        "y": 414
+      }
+    },
+    {
+      "name": "coin_magnet",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1201,
+        "y": 49,
+        "w": 286,
+        "h": 359
+      },
+      "anchor": {
+        "x": 1344,
+        "y": 407
+      }
+    },
+    {
+      "name": "phoenix_heart",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 63,
+        "y": 439,
+        "w": 312,
+        "h": 324
+      },
+      "anchor": {
+        "x": 219,
+        "y": 762
+      }
+    },
+    {
+      "name": "storm_scroll",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 461,
+        "y": 439,
+        "w": 248,
+        "h": 319
+      },
+      "anchor": {
+        "x": 585,
+        "y": 757
+      }
+    },
+    {
+      "name": "moon_seal",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 811,
+        "y": 456,
+        "w": 307,
+        "h": 311
+      },
+      "anchor": {
+        "x": 965,
+        "y": 766
+      }
+    },
+    {
+      "name": "dragon_orb",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1188,
+        "y": 455,
+        "w": 299,
+        "h": 314
+      },
+      "anchor": {
+        "x": 1338,
+        "y": 768
+      }
+    }
+  ]
+}

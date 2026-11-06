@@ -1,0 +1,163 @@
+{
+  "image": "/generated-assets/platform_atlas-transparent.webp",
+  "grid": {
+    "cols": 4,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "normal_wood",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 23,
+        "y": 163,
+        "w": 361,
+        "h": 160
+      },
+      "anchor": {
+        "x": 204,
+        "y": 322
+      }
+    },
+    {
+      "name": "cracked_bamboo",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 405,
+        "y": 166,
+        "w": 374,
+        "h": 158
+      },
+      "anchor": {
+        "x": 592,
+        "y": 323
+      }
+    },
+    {
+      "name": "moving_chain",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 804,
+        "y": 136,
+        "w": 346,
+        "h": 189
+      },
+      "anchor": {
+        "x": 977,
+        "y": 324
+      }
+    },
+    {
+      "name": "vanishing_spirit",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1178,
+        "y": 202,
+        "w": 377,
+        "h": 128
+      },
+      "anchor": {
+        "x": 1367,
+        "y": 329
+      }
+    },
+    {
+      "name": "spiked_wood",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 23,
+        "y": 488,
+        "w": 361,
+        "h": 160
+      },
+      "anchor": {
+        "x": 204,
+        "y": 647
+      }
+    },
+    {
+      "name": "ice_bridge",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 411,
+        "y": 517,
+        "w": 375,
+        "h": 144
+      },
+      "anchor": {
+        "x": 599,
+        "y": 660
+      }
+    },
+    {
+      "name": "fire_grate",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 805,
+        "y": 498,
+        "w": 343,
+        "h": 156
+      },
+      "anchor": {
+        "x": 977,
+        "y": 653
+      }
+    },
+    {
+      "name": "trampoline_drums",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1170,
+        "y": 507,
+        "w": 376,
+        "h": 147
+      },
+      "anchor": {
+        "x": 1358,
+        "y": 653
+      }
+    }
+  ]
+}

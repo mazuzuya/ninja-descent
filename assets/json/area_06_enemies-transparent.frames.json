@@ -1,0 +1,484 @@
+{
+  "image": "/generated-assets/area_06_enemies-transparent.webp",
+  "grid": {
+    "cols": 4,
+    "rows": 3,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "headless_guard_1",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 33,
+        "y": 27,
+        "w": 348,
+        "h": 359
+      },
+      "anchor": {
+        "x": 207,
+        "y": 385
+      }
+    },
+    {
+      "name": "headless_guard_2",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 412,
+        "y": 53,
+        "w": 365,
+        "h": 333
+      },
+      "anchor": {
+        "x": 595,
+        "y": 385
+      }
+    },
+    {
+      "name": "headless_guard_3",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 805,
+        "y": 39,
+        "w": 354,
+        "h": 347
+      },
+      "anchor": {
+        "x": 982,
+        "y": 385
+      }
+    },
+    {
+      "name": "headless_guard_4",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1225,
+        "y": 51,
+        "w": 329,
+        "h": 335
+      },
+      "anchor": {
+        "x": 1390,
+        "y": 385
+      }
+    },
+    {
+      "name": "lantern_ghost_1",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 54,
+        "y": 457,
+        "w": 264,
+        "h": 324
+      },
+      "anchor": {
+        "x": 186,
+        "y": 780
+      }
+    },
+    {
+      "name": "lantern_ghost_2",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 402,
+        "y": 505,
+        "w": 345,
+        "h": 293
+      },
+      "anchor": {
+        "x": 575,
+        "y": 797
+      }
+    },
+    {
+      "name": "lantern_ghost_3",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 825,
+        "y": 457,
+        "w": 266,
+        "h": 338
+      },
+      "anchor": {
+        "x": 958,
+        "y": 794
+      }
+    },
+    {
+      "name": "lantern_ghost_4",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1204,
+        "y": 495,
+        "w": 314,
+        "h": 306
+      },
+      "anchor": {
+        "x": 1361,
+        "y": 800
+      }
+    },
+    {
+      "name": "grave_crawler_1",
+      "source": {
+        "x": 56,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 25,
+        "y": 896,
+        "w": 361,
+        "h": 226
+      },
+      "anchor": {
+        "x": 206,
+        "y": 1121
+      }
+    },
+    {
+      "name": "grave_crawler_2",
+      "source": {
+        "x": 440,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 418,
+        "y": 897,
+        "w": 351,
+        "h": 225
+      },
+      "anchor": {
+        "x": 594,
+        "y": 1121
+      }
+    },
+    {
+      "name": "grave_crawler_3",
+      "source": {
+        "x": 824,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 813,
+        "y": 898,
+        "w": 330,
+        "h": 224
+      },
+      "anchor": {
+        "x": 978,
+        "y": 1121
+      }
+    },
+    {
+      "name": "grave_crawler_4",
+      "source": {
+        "x": 1208,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1186,
+        "y": 897,
+        "w": 359,
+        "h": 226
+      },
+      "anchor": {
+        "x": 1366,
+        "y": 1122
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "headless_guard",
+      "frames": [
+        {
+          "name": "headless_guard_1",
+          "source": {
+            "x": 56,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 33,
+            "y": 27,
+            "w": 348,
+            "h": 359
+          },
+          "anchor": {
+            "x": 207,
+            "y": 385
+          }
+        },
+        {
+          "name": "headless_guard_2",
+          "source": {
+            "x": 440,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 412,
+            "y": 53,
+            "w": 365,
+            "h": 333
+          },
+          "anchor": {
+            "x": 595,
+            "y": 385
+          }
+        },
+        {
+          "name": "headless_guard_3",
+          "source": {
+            "x": 824,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 805,
+            "y": 39,
+            "w": 354,
+            "h": 347
+          },
+          "anchor": {
+            "x": 982,
+            "y": 385
+          }
+        },
+        {
+          "name": "headless_guard_4",
+          "source": {
+            "x": 1208,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1225,
+            "y": 51,
+            "w": 329,
+            "h": 335
+          },
+          "anchor": {
+            "x": 1390,
+            "y": 385
+          }
+        }
+      ]
+    },
+    {
+      "name": "lantern_ghost",
+      "frames": [
+        {
+          "name": "lantern_ghost_1",
+          "source": {
+            "x": 56,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 54,
+            "y": 457,
+            "w": 264,
+            "h": 324
+          },
+          "anchor": {
+            "x": 186,
+            "y": 780
+          }
+        },
+        {
+          "name": "lantern_ghost_2",
+          "source": {
+            "x": 440,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 402,
+            "y": 505,
+            "w": 345,
+            "h": 293
+          },
+          "anchor": {
+            "x": 575,
+            "y": 797
+          }
+        },
+        {
+          "name": "lantern_ghost_3",
+          "source": {
+            "x": 824,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 825,
+            "y": 457,
+            "w": 266,
+            "h": 338
+          },
+          "anchor": {
+            "x": 958,
+            "y": 794
+          }
+        },
+        {
+          "name": "lantern_ghost_4",
+          "source": {
+            "x": 1208,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1204,
+            "y": 495,
+            "w": 314,
+            "h": 306
+          },
+          "anchor": {
+            "x": 1361,
+            "y": 800
+          }
+        }
+      ]
+    },
+    {
+      "name": "grave_crawler",
+      "frames": [
+        {
+          "name": "grave_crawler_1",
+          "source": {
+            "x": 56,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 25,
+            "y": 896,
+            "w": 361,
+            "h": 226
+          },
+          "anchor": {
+            "x": 206,
+            "y": 1121
+          }
+        },
+        {
+          "name": "grave_crawler_2",
+          "source": {
+            "x": 440,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 418,
+            "y": 897,
+            "w": 351,
+            "h": 225
+          },
+          "anchor": {
+            "x": 594,
+            "y": 1121
+          }
+        },
+        {
+          "name": "grave_crawler_3",
+          "source": {
+            "x": 824,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 813,
+            "y": 898,
+            "w": 330,
+            "h": 224
+          },
+          "anchor": {
+            "x": 978,
+            "y": 1121
+          }
+        },
+        {
+          "name": "grave_crawler_4",
+          "source": {
+            "x": 1208,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1186,
+            "y": 897,
+            "w": 359,
+            "h": 226
+          },
+          "anchor": {
+            "x": 1366,
+            "y": 1122
+          }
+        }
+      ]
+    }
+  ]
+}

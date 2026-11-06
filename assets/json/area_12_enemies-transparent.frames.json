@@ -1,0 +1,484 @@
+{
+  "image": "/generated-assets/area_12_enemies-transparent.webp",
+  "grid": {
+    "cols": 4,
+    "rows": 3,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "gear_samurai_1",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 20,
+        "y": 39,
+        "w": 357,
+        "h": 338
+      },
+      "anchor": {
+        "x": 199,
+        "y": 376
+      }
+    },
+    {
+      "name": "gear_samurai_2",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 381,
+        "y": 39,
+        "w": 377,
+        "h": 338
+      },
+      "anchor": {
+        "x": 570,
+        "y": 376
+      }
+    },
+    {
+      "name": "gear_samurai_3",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 766,
+        "y": 39,
+        "w": 375,
+        "h": 338
+      },
+      "anchor": {
+        "x": 954,
+        "y": 376
+      }
+    },
+    {
+      "name": "gear_samurai_4",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1169,
+        "y": 40,
+        "w": 385,
+        "h": 338
+      },
+      "anchor": {
+        "x": 1362,
+        "y": 377
+      }
+    },
+    {
+      "name": "clockwork_tanuki_1",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 81,
+        "y": 491,
+        "w": 317,
+        "h": 221
+      },
+      "anchor": {
+        "x": 240,
+        "y": 711
+      }
+    },
+    {
+      "name": "clockwork_tanuki_2",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 459,
+        "y": 491,
+        "w": 311,
+        "h": 218
+      },
+      "anchor": {
+        "x": 615,
+        "y": 708
+      }
+    },
+    {
+      "name": "clockwork_tanuki_3",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 833,
+        "y": 490,
+        "w": 314,
+        "h": 220
+      },
+      "anchor": {
+        "x": 990,
+        "y": 709
+      }
+    },
+    {
+      "name": "clockwork_tanuki_4",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1213,
+        "y": 489,
+        "w": 315,
+        "h": 220
+      },
+      "anchor": {
+        "x": 1371,
+        "y": 708
+      }
+    },
+    {
+      "name": "steam_automaton_1",
+      "source": {
+        "x": 56,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 43,
+        "y": 766,
+        "w": 330,
+        "h": 373
+      },
+      "anchor": {
+        "x": 208,
+        "y": 1138
+      }
+    },
+    {
+      "name": "steam_automaton_2",
+      "source": {
+        "x": 440,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 426,
+        "y": 766,
+        "w": 321,
+        "h": 373
+      },
+      "anchor": {
+        "x": 587,
+        "y": 1138
+      }
+    },
+    {
+      "name": "steam_automaton_3",
+      "source": {
+        "x": 824,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 796,
+        "y": 766,
+        "w": 338,
+        "h": 373
+      },
+      "anchor": {
+        "x": 965,
+        "y": 1138
+      }
+    },
+    {
+      "name": "steam_automaton_4",
+      "source": {
+        "x": 1208,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1181,
+        "y": 766,
+        "w": 332,
+        "h": 373
+      },
+      "anchor": {
+        "x": 1347,
+        "y": 1138
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "gear_samurai",
+      "frames": [
+        {
+          "name": "gear_samurai_1",
+          "source": {
+            "x": 56,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 20,
+            "y": 39,
+            "w": 357,
+            "h": 338
+          },
+          "anchor": {
+            "x": 199,
+            "y": 376
+          }
+        },
+        {
+          "name": "gear_samurai_2",
+          "source": {
+            "x": 440,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 381,
+            "y": 39,
+            "w": 377,
+            "h": 338
+          },
+          "anchor": {
+            "x": 570,
+            "y": 376
+          }
+        },
+        {
+          "name": "gear_samurai_3",
+          "source": {
+            "x": 824,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 766,
+            "y": 39,
+            "w": 375,
+            "h": 338
+          },
+          "anchor": {
+            "x": 954,
+            "y": 376
+          }
+        },
+        {
+          "name": "gear_samurai_4",
+          "source": {
+            "x": 1208,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1169,
+            "y": 40,
+            "w": 385,
+            "h": 338
+          },
+          "anchor": {
+            "x": 1362,
+            "y": 377
+          }
+        }
+      ]
+    },
+    {
+      "name": "clockwork_tanuki",
+      "frames": [
+        {
+          "name": "clockwork_tanuki_1",
+          "source": {
+            "x": 56,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 81,
+            "y": 491,
+            "w": 317,
+            "h": 221
+          },
+          "anchor": {
+            "x": 240,
+            "y": 711
+          }
+        },
+        {
+          "name": "clockwork_tanuki_2",
+          "source": {
+            "x": 440,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 459,
+            "y": 491,
+            "w": 311,
+            "h": 218
+          },
+          "anchor": {
+            "x": 615,
+            "y": 708
+          }
+        },
+        {
+          "name": "clockwork_tanuki_3",
+          "source": {
+            "x": 824,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 833,
+            "y": 490,
+            "w": 314,
+            "h": 220
+          },
+          "anchor": {
+            "x": 990,
+            "y": 709
+          }
+        },
+        {
+          "name": "clockwork_tanuki_4",
+          "source": {
+            "x": 1208,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1213,
+            "y": 489,
+            "w": 315,
+            "h": 220
+          },
+          "anchor": {
+            "x": 1371,
+            "y": 708
+          }
+        }
+      ]
+    },
+    {
+      "name": "steam_automaton",
+      "frames": [
+        {
+          "name": "steam_automaton_1",
+          "source": {
+            "x": 56,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 43,
+            "y": 766,
+            "w": 330,
+            "h": 373
+          },
+          "anchor": {
+            "x": 208,
+            "y": 1138
+          }
+        },
+        {
+          "name": "steam_automaton_2",
+          "source": {
+            "x": 440,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 426,
+            "y": 766,
+            "w": 321,
+            "h": 373
+          },
+          "anchor": {
+            "x": 587,
+            "y": 1138
+          }
+        },
+        {
+          "name": "steam_automaton_3",
+          "source": {
+            "x": 824,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 796,
+            "y": 766,
+            "w": 338,
+            "h": 373
+          },
+          "anchor": {
+            "x": 965,
+            "y": 1138
+          }
+        },
+        {
+          "name": "steam_automaton_4",
+          "source": {
+            "x": 1208,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1181,
+            "y": 766,
+            "w": 332,
+            "h": 373
+          },
+          "anchor": {
+            "x": 1347,
+            "y": 1138
+          }
+        }
+      ]
+    }
+  ]
+}

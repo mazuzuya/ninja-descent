@@ -1,0 +1,201 @@
+{
+  "image": "/generated-assets/obstacles_transcendent-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "mirror_beam",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 47,
+        "y": 54,
+        "w": 337,
+        "h": 309
+      },
+      "anchor": {
+        "x": 216,
+        "y": 362
+      }
+    },
+    {
+      "name": "reflection_gate",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 432,
+        "y": 48,
+        "w": 318,
+        "h": 323
+      },
+      "anchor": {
+        "x": 591,
+        "y": 370
+      }
+    },
+    {
+      "name": "moon_laser",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 810,
+        "y": 6,
+        "w": 307,
+        "h": 384
+      },
+      "anchor": {
+        "x": 964,
+        "y": 389
+      }
+    },
+    {
+      "name": "carnivore_vine",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1187,
+        "y": 37,
+        "w": 304,
+        "h": 348
+      },
+      "anchor": {
+        "x": 1339,
+        "y": 384
+      }
+    },
+    {
+      "name": "solar_jet",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1573,
+        "y": 19,
+        "w": 312,
+        "h": 378
+      },
+      "anchor": {
+        "x": 1729,
+        "y": 396
+      }
+    },
+    {
+      "name": "star_hammer",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 38,
+        "y": 420,
+        "w": 352,
+        "h": 377
+      },
+      "anchor": {
+        "x": 214,
+        "y": 796
+      }
+    },
+    {
+      "name": "time_freeze_rune",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 416,
+        "y": 440,
+        "w": 338,
+        "h": 341
+      },
+      "anchor": {
+        "x": 585,
+        "y": 780
+      }
+    },
+    {
+      "name": "rewind_gate",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 793,
+        "y": 436,
+        "w": 339,
+        "h": 347
+      },
+      "anchor": {
+        "x": 963,
+        "y": 782
+      }
+    },
+    {
+      "name": "reality_tear",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1191,
+        "y": 421,
+        "w": 292,
+        "h": 367
+      },
+      "anchor": {
+        "x": 1337,
+        "y": 787
+      }
+    },
+    {
+      "name": "origin_flame",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1564,
+        "y": 425,
+        "w": 320,
+        "h": 356
+      },
+      "anchor": {
+        "x": 1724,
+        "y": 780
+      }
+    }
+  ]
+}

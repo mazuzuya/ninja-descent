@@ -1,0 +1,201 @@
+{
+  "image": "/generated-assets/obstacles_early-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "roof_spike",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 44,
+        "y": 101,
+        "w": 309,
+        "h": 207
+      },
+      "anchor": {
+        "x": 199,
+        "y": 307
+      }
+    },
+    {
+      "name": "pendulum_blade",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 420,
+        "y": 27,
+        "w": 320,
+        "h": 316
+      },
+      "anchor": {
+        "x": 580,
+        "y": 342
+      }
+    },
+    {
+      "name": "bamboo_spear",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 835,
+        "y": 46,
+        "w": 283,
+        "h": 320
+      },
+      "anchor": {
+        "x": 977,
+        "y": 365
+      }
+    },
+    {
+      "name": "poison_mist",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1210,
+        "y": 33,
+        "w": 302,
+        "h": 332
+      },
+      "anchor": {
+        "x": 1361,
+        "y": 364
+      }
+    },
+    {
+      "name": "crystal_stalactite",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1627,
+        "y": 29,
+        "w": 237,
+        "h": 343
+      },
+      "anchor": {
+        "x": 1746,
+        "y": 371
+      }
+    },
+    {
+      "name": "bat_swarm",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 47,
+        "y": 419,
+        "w": 284,
+        "h": 350
+      },
+      "anchor": {
+        "x": 189,
+        "y": 768
+      }
+    },
+    {
+      "name": "water_jet",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 469,
+        "y": 410,
+        "w": 199,
+        "h": 377
+      },
+      "anchor": {
+        "x": 569,
+        "y": 786
+      }
+    },
+    {
+      "name": "drowning_chain",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 848,
+        "y": 408,
+        "w": 255,
+        "h": 378
+      },
+      "anchor": {
+        "x": 976,
+        "y": 785
+      }
+    },
+    {
+      "name": "fire_wall",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1269,
+        "y": 409,
+        "w": 184,
+        "h": 377
+      },
+      "anchor": {
+        "x": 1361,
+        "y": 785
+      }
+    },
+    {
+      "name": "lava_geyser",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1597,
+        "y": 412,
+        "w": 298,
+        "h": 373
+      },
+      "anchor": {
+        "x": 1746,
+        "y": 784
+      }
+    }
+  ]
+}

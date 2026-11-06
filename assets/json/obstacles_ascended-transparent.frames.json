@@ -1,0 +1,201 @@
+{
+  "image": "/generated-assets/obstacles_ascended-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "lightning_gate",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 48,
+        "y": 53,
+        "w": 328,
+        "h": 345
+      },
+      "anchor": {
+        "x": 212,
+        "y": 397
+      }
+    },
+    {
+      "name": "storm_fireball",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 450,
+        "y": 59,
+        "w": 295,
+        "h": 321
+      },
+      "anchor": {
+        "x": 598,
+        "y": 379
+      }
+    },
+    {
+      "name": "gear_saw",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 823,
+        "y": 64,
+        "w": 319,
+        "h": 315
+      },
+      "anchor": {
+        "x": 983,
+        "y": 378
+      }
+    },
+    {
+      "name": "steam_burst",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1262,
+        "y": 37,
+        "w": 203,
+        "h": 364
+      },
+      "anchor": {
+        "x": 1364,
+        "y": 400
+      }
+    },
+    {
+      "name": "current_vortex",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1562,
+        "y": 74,
+        "w": 351,
+        "h": 322
+      },
+      "anchor": {
+        "x": 1738,
+        "y": 395
+      }
+    },
+    {
+      "name": "torii_mine",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 54,
+        "y": 449,
+        "w": 296,
+        "h": 314
+      },
+      "anchor": {
+        "x": 202,
+        "y": 762
+      }
+    },
+    {
+      "name": "soul_tide",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 407,
+        "y": 522,
+        "w": 376,
+        "h": 182
+      },
+      "anchor": {
+        "x": 595,
+        "y": 703
+      }
+    },
+    {
+      "name": "ghost_cannon",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 813,
+        "y": 483,
+        "w": 354,
+        "h": 280
+      },
+      "anchor": {
+        "x": 990,
+        "y": 762
+      }
+    },
+    {
+      "name": "cannon_volley",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1219,
+        "y": 444,
+        "w": 315,
+        "h": 330
+      },
+      "anchor": {
+        "x": 1377,
+        "y": 773
+      }
+    },
+    {
+      "name": "propeller_blade",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1598,
+        "y": 448,
+        "w": 327,
+        "h": 326
+      },
+      "anchor": {
+        "x": 1762,
+        "y": 773
+      }
+    }
+  ]
+}
