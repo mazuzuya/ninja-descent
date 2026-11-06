@@ -24,6 +24,29 @@ void step(Simulation sim, double seconds) {
 }
 
 void main() {
+  test('arrow auto aim hits a nearby enemy in the next lane', () {
+    final sim = makeSim([]);
+    sim.reset(skinIndex: 0);
+    sim.start();
+    final player = sim.state.player;
+    final enemy = sim.nearEnemies.first;
+    for (final other in sim.nearEnemies) {
+      other["alive"] = false;
+    }
+    enemy["alive"] = true;
+    enemy["lane"] = (player["lane"] as double) == 0 ? 1.0 : (player["lane"] as double) - 1.0;
+    enemy["y"] = (player["y"] as double) + 40;
+    enemy["hp"] = 20.0;
+    sim.state.boss["active"] = false;
+
+    sim.shoot();
+    expect(sim.state.projectiles.single["laneVelocity"].abs(), greaterThan(2));
+    for (int i = 0; i < 30; i += 1) {
+      sim.updateProjectiles(1 / 60);
+    }
+    expect(enemy["hp"], lessThan(20));
+  });
+
   test('swiping past the edge lane keeps the lane a double and the run alive', () {
     final sim = makeSim([]);
     sim.reset(skinIndex: 0);

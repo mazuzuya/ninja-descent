@@ -112,6 +112,18 @@ class GameAssets {
     }
   }
 
+  // Once an old area is entirely above the viewport, its large theme sheets
+  // cannot be drawn again during normal forward play.
+  void releasePassedAreas(int areaIndex, double cameraY, List<Map<String, dynamic>> layouts, double viewHeight) {
+    for (int i = 0; i < areaIndex; i += 1) {
+      final endY = (layouts[i]["endY"] as num).toDouble();
+      if (cameraY <= endY + viewHeight) continue;
+      for (final atlas in areas[i].all) {
+        atlas.evict();
+      }
+    }
+  }
+
   Future<void> ensureArea(int index) => Future.wait([
         for (final atlas in areas[index].all) (atlas..touch()).load(),
         for (final hazard in AREAS[index].hazards) (obstacleAtlas(hazard)?..touch())?.load() ?? Future.value(),

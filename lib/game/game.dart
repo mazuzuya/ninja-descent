@@ -23,6 +23,8 @@ class NinjaGame extends Game {
   bool _tutorialSeen = false;
   bool _startAfterTutorial = false;
   bool _musicUnlocked = false;
+  String? _musicMode;
+  String _normalTrack = Audio.normalTracks.first;
 
   GameAssets? _assets;
   Simulation? _simulation;
@@ -62,6 +64,8 @@ class NinjaGame extends Game {
     _simulation!.reset(skinIndex: persistent.skinIndex);
     _renderer = Renderer(assets: _assets!, simulation: _simulation!, fx: fx, effectsIntensity: tweaks.effectsIntensity);
     _loaded = true;
+    // Start the menu track right away instead of waiting for the first tap.
+    _musicUnlocked = true;
     notifier.best = persistent.best;
     notifier.shopFocus = persistent.skinIndex;
     _refreshShop();
@@ -186,7 +190,7 @@ class NinjaGame extends Game {
         audio.jump();
         break;
       case "shoot":
-        audio.shoot(event["charged"] == true);
+        audio.shoot();
         break;
       case "slash":
         audio.slash();
@@ -199,22 +203,31 @@ class NinjaGame extends Game {
         }
         break;
       case "hit":
-      case "enemyDown":
+      case "bossHit":
       case "platformBreak":
         audio.hit();
         break;
-      case "bossHit":
-        audio.bossHit();
+      case "enemyDown":
+        audio.enemyDie();
+        break;
+      case "bossAttack":
+        audio.bossAttack();
+        break;
+      case "shield":
+        audio.shield();
+        break;
+      case "revive":
+        audio.revive();
         break;
       case "coin":
-        audio.coin(event["combo"] ?? 1);
+        audio.coin();
         break;
       case "heal":
         audio.heal();
         audio.haptic();
         break;
       case "powerup":
-        audio.victory();
+        audio.powerup();
         notifier.announce("powerup", event["name"], kPowerupInfo[event["item"]] ?? "");
         break;
       case "area":
@@ -242,10 +255,11 @@ class NinjaGame extends Game {
         _showEnd("TERTELAN JURANG", event["score"] as num, false, event["area"] ?? 20);
         break;
       case "victory":
-        audio.victory();
+        audio.win();
         _showEnd("EMPEROR OF NOTHING TUMBANG", event["score"] as num, true, 20);
         break;
       case "skin":
+        audio.skinChange();
         persistent.skinIndex = event["skinIndex"];
         _saveStateSoon();
         break;
@@ -548,9 +562,14 @@ class NinjaGame extends Game {
       fx.update(capped, _simulation!, _renderer?.viewWidth ?? 390, VIEW_HEIGHT, _laneX);
     }
 
-    if (_musicUnlocked) {
-      final bossFight = state.boss["active"] == true && state.boss["defeated"] != true;
-      audio.playMusic(state.mode == "gameover" ? null : bossFight ? "music_boss" : "music_descent");
+    if (_musicUnlocked && state.mode != "paused") {
+      // A new random track each time the mode changes; pause keeps the current one.
+      if (state.mode != _musicMode) {
+        _musicMode = state.mode;
+        _normalTrack = audio.pickNormalTrack(_normalTrack);
+      }
+      final bossFight = state.mode == "running" && state.boss["active"] == true && state.boss["defeated"] != true;
+      audio.playMusic(bossFight ? Audio.bossTrack : _normalTrack);
     }
 
     // Keep the sheets around the player decoded and free the rest.
@@ -563,6 +582,7 @@ class NinjaGame extends Game {
         chain: const [7, 13, 17, 19].contains(state.skinIndex),
         revive: state.player["reviveReady"] == true,
       );
+      _assets!.releasePassedAreas(state.areaIndex, state.cameraY, state.layouts, VIEW_HEIGHT);
       _assets!.sweep();
     }
 

@@ -633,14 +633,34 @@ class Simulation {
     final player = state.player;
     setAnim("shoot", 0.3);
     var targetLane = player["lane"] + player["facing"] * 0.25;
+    double? sideTargetY;
     if (state.boss["active"] == true && state.boss["defeated"] != true) {
       targetLane = state.boss["lane"];
+      if ((state.boss["y"] - player["y"]).abs() < 120 &&
+          (targetLane - player["lane"]).abs() >= 0.6) {
+        sideTargetY = (state.boss["y"] as num).toDouble() - 62;
+      }
     } else {
+      final sideTargets = nearEnemies
+          .where((e) => e["alive"] == true &&
+              ((e["y"] as num).toDouble() - (player["y"] as num).toDouble()).abs() < 120 &&
+              ((e["lane"] as num).toDouble() - (player["lane"] as num).toDouble()).abs() >= 0.6 &&
+              (e["y"] as num).toDouble() > state.cameraY - 80 &&
+              (e["y"] as num).toDouble() < state.cameraY + 1000)
+          .toList()
+        ..sort((a, b) =>
+            ((a["y"] - player["y"]).abs() + (a["lane"] - player["lane"]).abs() * 80)
+                .compareTo((b["y"] - player["y"]).abs() + (b["lane"] - player["lane"]).abs() * 80));
       final target = nearEnemies
           .where((e) => e["alive"] == true && e["y"] > player["y"] - 20 && e["y"] < player["y"] + 420)
           .toList()
         ..sort((a, b) => (a["y"] as double).compareTo(b["y"] as double));
-      if (target.isNotEmpty) targetLane = target.first["lane"];
+      if (sideTargets.isNotEmpty) {
+        targetLane = sideTargets.first["lane"];
+        sideTargetY = (sideTargets.first["y"] as num).toDouble() - 38;
+      } else if (target.isNotEmpty) {
+        targetLane = target.first["lane"];
+      }
     }
     final profiles = [
       {"speed": 570.0, "damage": 1.1, "pierce": 1, "burn": 0.0, "blast": 0.0, "chain": 0, "heal": 0.0, "radius": 0.32, "count": 1, "spread": 0.2},
@@ -668,12 +688,18 @@ class Simulation {
     final count = (profile["count"] as int) + (state.buffs["storm_scroll"]! > 0 ? 2 : 0) + (state.buffs["clone_charm"]! > 0 ? 1 : 0);
     for (int i = 0; i < count; i += 1) {
       final spread = count == 1 ? 0.0 : (i - (count - 1) / 2) * (profile["spread"] as double);
+      final speed = (profile["speed"] as double) + (charged ? 90.0 : 0);
+      final laneDelta = (targetLane - player["lane"] as num).toDouble();
+      final laneSpacing = laneX(1, state.viewWidth, state.laneCount) - laneX(0, state.viewWidth, state.laneCount);
+      final yDelta = sideTargetY == null ? 0.0 : sideTargetY - ((player["y"] as num).toDouble() - 55);
+      final distance = math.sqrt(math.pow(laneDelta * laneSpacing, 2) + math.pow(yDelta, 2));
+      final sideTravelTime = sideTargetY == null ? 1.0 : math.max(0.08, distance / speed);
       state.projectiles.add({
         "lane": player["lane"],
         "laneCount": state.laneCount,
-        "laneVelocity": (targetLane - player["lane"]) * 2.2 + spread,
+        "laneVelocity": sideTargetY == null ? laneDelta * 2.2 + spread : laneDelta / sideTravelTime + spread,
         "y": player["y"] - 55,
-        "vy": (profile["speed"] as double) + (charged ? 90.0 : 0),
+        "vy": sideTargetY == null ? speed : yDelta / sideTravelTime,
         "damage": (profile["damage"] as double) * (charged ? 3.2 : 1) * (state.buffs["dragon_orb"]! > 0 ? 1.75 : 1),
         "pierce": (profile["pierce"] as int) + (charged ? 2 : 0),
         "charged": charged,
@@ -1371,7 +1397,7 @@ class Simulation {
         onEvent({"type": "bossHit"});
       }
     }
-    state.projectiles = state.projectiles.where((p) => p["pierce"] > 0 && p["y"] < state.cameraY + 940).toList();
+    state.projectiles = state.projectiles.where((p) => p["pierce"] > 0 && p["y"] > state.cameraY - 140 && p["y"] < state.cameraY + 940 && p["lane"] > -1 && p["lane"] < state.laneCount + 1).toList();
 
     for (final projectile in state.hostileProjectiles) {
       projectile["y"] += projectile["vy"] * hDt;

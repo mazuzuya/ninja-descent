@@ -38,6 +38,11 @@ class Renderer {
   final ui.Paint _ghostPaint = ui.Paint()
     ..filterQuality = ui.FilterQuality.low
     ..blendMode = ui.BlendMode.plus;
+  final ui.Paint _plainPaint = ui.Paint()..filterQuality = ui.FilterQuality.medium;
+  final ui.Paint _alphaPaint = ui.Paint()..filterQuality = ui.FilterQuality.medium;
+  final ui.Paint _additivePaint = ui.Paint()
+    ..filterQuality = ui.FilterQuality.medium
+    ..blendMode = ui.BlendMode.plus;
   ui.Rect _lastDst = ui.Rect.zero;
   ui.Rect _lastCrop = ui.Rect.zero;
   // Background cross-fade between areas.
@@ -49,10 +54,10 @@ class Renderer {
 
   // Paint alpha modulates image opacity; low filtering matches the browser's
   // default canvas image smoothing.
-  ui.Paint get _plain => ui.Paint()..filterQuality = ui.FilterQuality.medium;
-  ui.Paint _alpha(double a) => _plain..color = ui.Color.fromRGBO(255, 255, 255, a);
+  ui.Paint get _plain => _plainPaint;
+  ui.Paint _alpha(double a) => _alphaPaint..color = ui.Color.fromRGBO(255, 255, 255, a);
   // "lighter" composite in the JS canvas.
-  ui.Paint _additiveAlpha(double a) => _alpha(a)..blendMode = ui.BlendMode.plus;
+  ui.Paint _additiveAlpha(double a) => _additivePaint..color = ui.Color.fromRGBO(255, 255, 255, a);
 
   // Images are decoded lazily (see GameAssets); a sheet that is still decoding
   // is simply skipped for a frame or two.
@@ -126,7 +131,10 @@ class Renderer {
     }
     _bgFade = math.min(1, _bgFade + (state.time - _lastTime).abs() / 1.1);
     _lastTime = state.time;
-    if (_bgFade >= 1) _bgFromArea = -1;
+    if (_bgFade >= 1 && _bgFromArea >= 0) {
+      assets.areas[_bgFromArea].background.evict();
+      _bgFromArea = -1;
+    }
     final image = assets.areas[state.areaIndex].background.image;
     final from = _bgFromArea >= 0 ? assets.areas[_bgFromArea].background.image : null;
     canvas.drawRect(ui.Rect.fromLTWH(0, 0, _viewWidth, VIEW_HEIGHT), ui.Paint()..color = const ui.Color(0xff050914));
@@ -290,6 +298,7 @@ class Renderer {
     final height = boss["laneCount"] >= 8 ? 122.0 : boss["laneCount"] >= 7 ? 132.0 : boss["laneCount"] == 6 ? 138.0 : boss["areaIndex"] == 6 ? 150.0 : boss["areaIndex"] == 8 ? 158.0 : 142.0;
     final bossX = laneX(boss["lane"], boss["laneCount"]);
     final bossY = (boss["y"] as num).toDouble() - state.cameraY;
+    if (bossY < -height - 120 || bossY > VIEW_HEIGHT + height + 120) return;
     if (boss["defeated"] != true) {
       final auraRadius = height * (0.82 + 0.06 * math.sin(state.time * 4));
       final center = ui.Offset(bossX, bossY - height * 0.5);
