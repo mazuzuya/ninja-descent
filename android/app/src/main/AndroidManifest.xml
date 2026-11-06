@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="Ninja Descent"
+        android:label="Ninja Descent : Abyss Run"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
